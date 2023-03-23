@@ -2,6 +2,7 @@ int r=8;
 int g=10;
 int b=9;
 
+int temp = 1000;
 
 void setup()
 {
@@ -13,16 +14,20 @@ void setup()
 
 void loop()
 {
-  analogWrite(r, 0);
-  analogWrite(g, 250);
-  analogWrite(b, 154);
-
-  delay(1000); // Wait for 1000 millisecond(s)
   
-  analogWrite(r, 0);
-  analogWrite(g, 0);
-  analogWrite(b, 0);
+  setColor(0,250,0);
+ 
 
-  delay(1000); // Wait for 1000 millisecond(s)
+  setColor(250,250,0);
+  
+  
+  setColor(250,0,0);
 
+}
+
+void setColor(int red, int green, int blue) {
+  analogWrite(r, red);
+  analogWrite(g, green);
+  analogWrite(b, blue);
+  delay(temp); 
 }
