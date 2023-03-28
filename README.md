@@ -27,3 +27,11 @@
 - Trocar as cores do Led
 ### Estrutura
 ![img](./LED_RGB/t725.png "LED RGB")
+
+## [LED RGB Potentiometer](/LED_RGB_Toggle//)
+### Desafio:
+- Atribua cada entrada de LED RGB a um potenciômetro
+- Ao girar um potenciômetro, a cor atribuída a ele será gradualmente intensificada.
+- Ao girar simultaneamente dois ou mais potenciômetros, a cor será misturada.
+### Estrutura
+![img](./LED_RGB_Toggle/t725.png "LED RGB")
