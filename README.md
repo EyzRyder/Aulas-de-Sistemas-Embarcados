@@ -1,4 +1,6 @@
-# Aulas-de-Sistemas-Embarcados
+# Sistemas-Embarcados
+
+Atividades da aula de Sistemas Embarcados no 3ºano na ETEC
 
 ## [LED Bascio](/LED_Basico)
 ### Desafio:
