@@ -8,9 +8,9 @@ int red = A0;
 int green = A1;
 int blue = A2;
 
-int btn = 3;
+int btn = 11;
 
-int valor = 0;
+int valor = 1;
 
 void setup()
 {
@@ -22,72 +22,69 @@ void setup()
   pinMode(red, OUTPUT);
   pinMode(green, OUTPUT);
   pinMode(blue, OUTPUT);
-  pinMode(btn, OUTPUT);
+  pinMode(btn, INPUT);
 }
 
 void loop()
 {
-  while(valor<5){
-    if (digitalRead(btn) == HIGH) {
-      valor++;
-    }
-    if (valor == 1) {
-      set1();
-    }
-    if (valor == 2) {
-      set2();
-    }
-    if (valor == 3) {
-      set3();
-      set4();
-    }
-    if (valor == 5) {
-      valor=0;
-    }
+
+  set1on();
+  set1off();
+
+  for(int loop=1;loop<=10;loop++){
+    set3();
+    set4();
   }
+
+  set2();
+
+  for(int loop=1;loop<=5;loop++){
+    set3();
+    set4();
+  }
+
+  set4();
+
 }
 
-void set1 (){
-  int i;
-
-    if(i<10){
-    for(i=4; i<11; i++){
+void set1on (){
+    for(int i=5; i<=10; i++){
         digitalWrite(i, HIGH);
-        delay(1000); 
+        delay(500); 
       }     
-    }
+}
 
-  if(i>5){
-    for(i; i>4;i--){
-      digitalWrite(i, LOW);
-      delay(1000); 
-      }
+void set1off (){
+  for(int i=10; i>=5;i--){
+    digitalWrite(i, LOW);
+    delay(500); 
   }
 }
+
 
 
 void set2 (){
-    for(int i=5; i<11; i++){
-        digitalWrite(i, HIGH);
-        digitalWrite(i-1, LOW);
-        delay(1000); 
-    }
+  for(int i2=5; i2<11; i2++){
+    digitalWrite(i2, HIGH);
+    digitalWrite(i2-1, LOW);
+    delay(500); 
+  }
 }
 
 void set3 (){
-        digitalWrite(r, HIGH);
-        digitalWrite(g, HIGH);
-        digitalWrite(b, HIGH);
-        digitalWrite(o, HIGH);
-        digitalWrite(y, HIGH);
-        delay(1000); 
+  digitalWrite(r, HIGH);
+  digitalWrite(g, HIGH);
+  digitalWrite(b, HIGH);
+  digitalWrite(o, HIGH);
+  digitalWrite(y, HIGH);
+  delay(500); 
 }
 
 void set4 (){
-        digitalWrite(r, LOW);
-        digitalWrite(g, LOW);
-        digitalWrite(b, LOW);
-        digitalWrite(o, LOW);
-        digitalWrite(y, LOW);
-        delay(1000); 
+  digitalWrite(r, LOW);
+  digitalWrite(g, LOW);
+  digitalWrite(b, LOW);
+  digitalWrite(o, LOW);
+  digitalWrite(y, LOW);
+  delay(500); 
 }
