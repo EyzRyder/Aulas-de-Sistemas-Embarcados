@@ -46,3 +46,9 @@ Atividades da aula de Sistemas Embarcados no 3ºano na ETEC
 ### Estrutura
 ![img](./LED_Sequence/with%20btn/t725.png "LED RGB")
 ![img](./LED_Sequence/with%20outBtn/t725.png "LED RGB")
+## [Servo com button](/Servo_BTN/)
+### Desafio:
+- Usar servo
+- usar o buttoão para mexer o Servo
+### Estrutura
+![img](./Servo_BTN/t725.png "Servo_BTN")
