@@ -52,3 +52,9 @@ Atividades da aula de Sistemas Embarcados no 3ºano na ETEC
 - usar o buttoão para mexer o Servo
 ### Estrutura
 ![img](./Servo_BTN/t725.png "Servo_BTN")
+## [Servo com Potenciometer](/PinoPot_Servo/)
+### Desafio:
+- Usar servo
+- usar o potenciometer para mexer o Servo
+### Estrutura
+![img](./PinoPot_Servo/t725.png "PinoPot_Servo")
